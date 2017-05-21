@@ -2,14 +2,15 @@
 
 //Write your code here
 function generatePyramid(a) {
-        var arr = [];
-    for (var i = 1; i <= a; i++) {
-        arr = [];
-        for (var j = 1; j <= i; j++) {
-            arr.push("*");            
-        }
-        console.log(arr.join(" ") + "\n");
-    }
+	var arr = [];
+	for (var i = 1; i<=a; i++) {
+		var str='';
+		for (var j = 0; j < i; j++) {
+			str+='*'
+		}
+		if(str) arr.push(str);
+	}   
+	return arr.join('\n');
 }
 
-generatePyramid(6);
+module.exports = generatePyramid;
