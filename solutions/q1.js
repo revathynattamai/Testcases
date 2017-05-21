@@ -5,7 +5,7 @@ module.exports = function (out) {
 
   let dd = new Date();
   m = dd.getMonth();
-  d = dd.getDay();
+  d = dd.getDate();
   y = dd.getFullYear();
   if (m < 10)
     m = "0" + m;

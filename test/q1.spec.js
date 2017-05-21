@@ -29,16 +29,20 @@ let chai = require('chai');
 let expect = chai.expect;
 let index = require('../solutions/q1');
 
-function getDate(){
-  var date=new Date();
-  var d=date.getDate();
-  var m=date.getMonth();
-  var y=date.getFullYear();
-  return m+"/"+d+"/"+y;
+function getDate() {
+  let dd = new Date();
+  m = dd.getMonth();
+  d = dd.getDate();
+  y = dd.getFullYear();
+  if (m < 10)
+    m = "0" + m;
+  if (d < 10)
+    d = "0" + d;
+  return (m + "/" + d + "/" + y);;
 }
-describe('Question 1 - Test code for correct output', function(){
-  it ('Matches the desired output', function(done){
-    index(function(data){
+describe('Question 1 - Test code for date', function () {
+  it('Matches the desired output', function (done) {
+    index(function (data) {
       expect(data).to.deep.equal(getDate());
       done();
     })
