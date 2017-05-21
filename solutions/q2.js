@@ -4,8 +4,10 @@ function highestAndLowest(numbers) {
     // Write your code here
     numbers = numbers.split(" ");
   
-parseInt(Math.max.apply(null, numbers)) + " " +  parseInt(Math.min.apply(null, numbers)); 
+let a = Math.max.apply(null, numbers);   
+let b = Math.min.apply(null, numbers); 
 
+return parseInt(a) + " " + parseInt(b);
 }
 
 // highestAndLowest("2 4 5 6 3");

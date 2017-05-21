@@ -4,15 +4,13 @@ let nums = "12345648";
 let str = nums.toString();
 let result = [str[0]];
 module.exports = function (nums, out) {
-  // Write your code here
-
-  
-    for (var x = 1; x < str.length; x++) {
-      if ((str[x - 1] % 2 === 0) && (str[x] % 2 === 0)) {
-        result.push('-', str[x]);
+  // Write your code here 
+    for (var i = 1; i < str.length; i++) {
+      if ((str[i - 1] % 2 === 0) && (str[i] % 2 === 0)) {
+        result.push('-', str[i]);
       }
       else {
-        result.push(str[x]);
+        result.push(str[i]);
       }
     }
   
