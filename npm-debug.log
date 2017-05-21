@@ -1,33 +1,33 @@
 0 info it worked if it ends with ok
-1 verbose cli [ '/usr/bin/nodejs', '/usr/bin/npm', 'run', 'test' ]
-2 info using npm@3.10.10
-3 info using node@v6.10.2
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'run', 'test' ]
+2 info using npm@4.1.2
+3 info using node@v7.6.0
 4 verbose run-script [ 'pretest', 'test', 'posttest' ]
 5 info lifecycle Week3-Assignment-1@0.1.0~pretest: Week3-Assignment-1@0.1.0
 6 silly lifecycle Week3-Assignment-1@0.1.0~pretest: no script for pretest, continuing
 7 info lifecycle Week3-Assignment-1@0.1.0~test: Week3-Assignment-1@0.1.0
 8 verbose lifecycle Week3-Assignment-1@0.1.0~test: unsafe-perm in lifecycle true
-9 verbose lifecycle Week3-Assignment-1@0.1.0~test: PATH: /usr/lib/node_modules/npm/bin/node-gyp-bin:/home/user/Desktop/week3-assignment/node_modules/.bin:/home/user/.local/share/umake/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
-10 verbose lifecycle Week3-Assignment-1@0.1.0~test: CWD: /home/user/Desktop/week3-assignment
+9 verbose lifecycle Week3-Assignment-1@0.1.0~test: PATH: /usr/local/lib/node_modules/npm/bin/node-gyp-bin:/Users/sreeram/Dropbox/Works/Testcases/node_modules/.bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/sreeram/Library/Android/sdk/tools:/Users/sreeram/Library/Android/sdk/platform-tools:/Users/sreeram/Library/Android/sdk/tools:/Users/sreeram/Library/Android/sdk/platform-tools
+10 verbose lifecycle Week3-Assignment-1@0.1.0~test: CWD: /Users/sreeram/Dropbox/Works/Testcases
 11 silly lifecycle Week3-Assignment-1@0.1.0~test: Args: [ '-c', 'mocha' ]
 12 silly lifecycle Week3-Assignment-1@0.1.0~test: Returned: code: 1  signal: null
 13 info lifecycle Week3-Assignment-1@0.1.0~test: Failed to exec test script
 14 verbose stack Error: Week3-Assignment-1@0.1.0 test: `mocha`
 14 verbose stack Exit status 1
-14 verbose stack     at EventEmitter.<anonymous> (/usr/lib/node_modules/npm/lib/utils/lifecycle.js:255:16)
+14 verbose stack     at EventEmitter.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/lifecycle.js:279:16)
 14 verbose stack     at emitTwo (events.js:106:13)
-14 verbose stack     at EventEmitter.emit (events.js:191:7)
-14 verbose stack     at ChildProcess.<anonymous> (/usr/lib/node_modules/npm/lib/utils/spawn.js:40:14)
+14 verbose stack     at EventEmitter.emit (events.js:192:7)
+14 verbose stack     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/spawn.js:40:14)
 14 verbose stack     at emitTwo (events.js:106:13)
-14 verbose stack     at ChildProcess.emit (events.js:191:7)
-14 verbose stack     at maybeClose (internal/child_process.js:886:16)
+14 verbose stack     at ChildProcess.emit (events.js:192:7)
+14 verbose stack     at maybeClose (internal/child_process.js:890:16)
 14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:226:5)
 15 verbose pkgid Week3-Assignment-1@0.1.0
-16 verbose cwd /home/user/Desktop/week3-assignment
-17 error Linux 4.4.0-75-generic
-18 error argv "/usr/bin/nodejs" "/usr/bin/npm" "run" "test"
-19 error node v6.10.2
-20 error npm  v3.10.10
+16 verbose cwd /Users/sreeram/Dropbox/Works/Testcases
+17 error Darwin 15.5.0
+18 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "run" "test"
+19 error node v7.6.0
+20 error npm  v4.1.2
 21 error code ELIFECYCLE
 22 error Week3-Assignment-1@0.1.0 test: `mocha`
 22 error Exit status 1
