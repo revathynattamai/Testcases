@@ -5,3 +5,8 @@ Expected Output: 'abeemrstw
 
 var string='webmaster';
 //Write your code here
+
+function alphabet_order(string)
+  {
+return string.split('').sort().join('');
+  }

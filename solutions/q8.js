@@ -6,5 +6,22 @@
 
 function valid_email(str) {
     //Write your code here
+    
+
+    const sy = "~`!#$%^&*+=-[]\\\';,/{}|\":<>?@";
+    const alnum = "^[a-zA-Z0-9]*$";
+
+    for (var i = 0; i < str.length; i++) {
+            if (alnum.indexOf(str.charAt(i)) == -1) {
+                return true;
+            }
+    }
+                
+
+    if ((sy.indexOf(str.charAt(0)) == 2) || (sy.indexOf(str.charAt(str.length) == 2))) {
+        return false;
+    }
+
+    
 }
 module.exports = valid_email;

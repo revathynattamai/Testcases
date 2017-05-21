@@ -1,13 +1,16 @@
 //Q2: Write a function that accepts numbers as input with spaces in between (such as: 1 2 3 ) and returns highest and the lowest number?
 
+
 function highestAndLowest(numbers) {
     // Write your code here
-    numbers = numbers.split(" ");
-  
- return Math.max.apply(null, numbers) + " " +  Math.min.apply(null, numbers); 
-//  return parseInt(a);
+    var numbers2 = numbers.split(" ");
+    var numbers3 = numbers2.map(function (number) {
+        return +number;
+
+    });
+    console.log(numbers3);
+    console.log(typeof numbers3[0]);
+    return Math.max.apply(null, numbers3) + " " + Math.min.apply(null, numbers3);
+
 }
-
-// highestAndLowest("2 4 5 6 3");
-
 module.exports = highestAndLowest;
